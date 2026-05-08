@@ -1,5 +1,13 @@
 import { Particles } from "./Particles";
+import { Link } from "react-router-dom";
 
+
+const links = [
+  { label: "Home", href: "#home", route: false },
+  { label: "Features", href: "#features", route: false },
+  { label: "Dashboard", href: "/dashboard", route: true },
+  
+];
 export const CTASection = () => {
   return (
     <section id="cta" className="relative py-24 md:py-32">
@@ -41,7 +49,7 @@ export const CTASection = () => {
                 href="#features"
                 className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-medium glass border-border/60 hover:border-primary/50 transition-colors"
               >
-                Talk to clinical team
+                Learn More
               </a>
             </div>
           </div>
