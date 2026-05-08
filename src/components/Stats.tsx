@@ -2,7 +2,7 @@ import { useReveal } from "@/hooks/use-reveal";
 import { useCounter } from "@/hooks/use-counter";
 
 const stats = [
-  { value: 92, suffix: "%", label: "Prediction Accuracy", sub: "AUROC on held-out ICU set" },
+  { value: 90, suffix: "%", label: "Prediction Accuracy", sub: "AUROC on held-out ICU set" },
   { value: 6, suffix: "h", label: "Early Detection", sub: "Median lead time before onset" },
   { value: 1000, suffix: "+", label: "ICU Records Processed", sub: "Time-series patient encounters" },
 ];
