@@ -39,10 +39,10 @@ export const CTASection = () => {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
-                href="/dashboard"
+                href="#home"
                 className="group relative inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-medium bg-gradient-primary shadow-glow-strong transition-shadow duration-300"
               >
-                Go to Dashboard
+                start Now
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
