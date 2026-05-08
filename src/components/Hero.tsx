@@ -1,7 +1,15 @@
 import { Particles } from "./Particles";
 import { DashboardMock } from "./DashboardMock";
 import { Sparkles } from "lucide-react";
-
+import { Link } from "react-router-dom";
+const links = [
+  { label: "Home", href: "#home", route: false },
+  { label: "Features", href: "#features", route: false },
+  { label: "Dashboard", href: "/dashboard", route: true },
+  { label: "Patients", href: "/patients", route: true },
+  { label: "Analytics", href: "/analytics", route: true },
+  { label: "About Sepsis", href: "#about-sepsis", route: false },
+];
 export const Hero = () => {
   return (
     <section id="home" className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
