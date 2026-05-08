@@ -72,13 +72,15 @@ export const Hero = () => {
             className="mt-8 flex flex-wrap items-center justify-center gap-3 animate-fade-in-up"
             style={{ animationDelay: "0.45s" }}
           >
-            <a
-              href="/dashboard"
+            <Link
+            to="/dashboard"
+          
               className="group relative inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-medium bg-gradient-primary shadow-glow hover:shadow-glow-strong transition-shadow duration-300"
             >
+
               <span>Start Analysis</span>
               <span className="transition-transform group-hover:translate-x-1">→</span>
-            </a>
+            </Link>
             <a
               href="#dashboard"
               className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-medium glass border-border/60 hover:border-primary/50 hover:text-primary-glow transition-all duration-300"
