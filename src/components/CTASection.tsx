@@ -1,13 +1,7 @@
 import { Particles } from "./Particles";
 import { Link } from "react-router-dom";
 
-
-const links = [
-  { label: "Home", href: "#home", route: false },
-  { label: "Features", href: "#features", route: false },
-  { label: "Dashboard", href: "/dashboard", route: true },
-  
-];
+const DASHBOARD_ROUTE = "/dashboard";
 export const CTASection = () => {
   return (
     <section id="cta" className="relative py-24 md:py-32">
@@ -38,13 +32,13 @@ export const CTASection = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a
-                href="#home"
+              <Link
+                to={DASHBOARD_ROUTE}
                 className="group relative inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-medium bg-gradient-primary shadow-glow-strong transition-shadow duration-300"
               >
                 start Now
                 <span className="transition-transform group-hover:translate-x-1">→</span>
-              </a>
+              </Link>
               <a
                 href="#features"
                 className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-medium glass border-border/60 hover:border-primary/50 transition-colors"

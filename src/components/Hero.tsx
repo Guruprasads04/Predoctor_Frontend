@@ -2,14 +2,8 @@ import { Particles } from "./Particles";
 import { DashboardMock } from "./DashboardMock";
 import { Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-const links = [
-  { label: "Home", href: "#home", route: false },
-  { label: "Features", href: "#features", route: false },
-  { label: "Dashboard", href: "/dashboard", route: true },
-  { label: "Patients", href: "/patients", route: true },
-  { label: "Analytics", href: "/analytics", route: true },
-  { label: "About Sepsis", href: "#about-sepsis", route: false },
-];
+
+const DASHBOARD_ROUTE = "/dashboard";
 export const Hero = () => {
   return (
     <section id="home" className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
@@ -73,8 +67,7 @@ export const Hero = () => {
             style={{ animationDelay: "0.45s" }}
           >
             <Link
-            to="/dashboard"
-          
+              to={DASHBOARD_ROUTE}
               className="group relative inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-medium bg-gradient-primary shadow-glow hover:shadow-glow-strong transition-shadow duration-300"
             >
 
